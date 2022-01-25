@@ -3,9 +3,178 @@
 @import 'reset';
 @import 'global';
 
+//================================HEADER
+.header{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   &__inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 50px;
+      padding: 40px 0;
+   }
+   &__button{
+      padding: 11px 48px;
+   }
+}
 
+.menu{
+   max-width: 270px;
+   width: 100%;
+   &__list{
+      display: flex;
+      justify-content: space-between;
+   }
+   &__list-link{
+      transition: all .3s;
+      &:hover{
+         color: #fff;
+      }
+      &.menu__list-link--active{
+         color: #fff;
+      }
+   }
+}
 
-
+//================================FOOTER
+.footer{
+   padding: 74px 0 70px;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   &__inner{
+      display: flex;
+      justify-content: space-between;
+   }
+   &__title{
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 27px;
+   }
+   &__content{
+      display: flex;
+      width: 100%;
+   }
+   &__info{
+      max-width: 264px;
+      margin-right: 30px;
+   }
+   &__logo{
+      display: inline-block;
+      margin-bottom: 27px;
+   }
+   &__news,
+   &__resources{
+      width: 120px;
+   }
+   &__resources{
+      margin-left: auto;
+   }
+   &__list-item{
+      margin-bottom: 7px;
+      &:last-child{
+         margin-bottom: 0;
+      }
+   }
+   &__list-link{
+      transition: all .3s;
+      &:hover{
+         color: #fff;
+      }
+   }
+   &__contact{
+      max-width: 450px;
+      width: 100%;
+      margin-left: 100px;
+   }
+   &__form{
+      display: flex;
+   }
+   &__input{
+      max-width: 335px;
+      width: 100%;
+      border: none;
+      padding: 16px 30px;
+   }
+   &__button{
+      border: none;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 125px;
+   }
+}
+//================================INTRO
+.intro{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   &__inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 170px 0 63px;
+   }
+   &__content{
+      max-width: 480px;
+      width: 100%;
+   }
+   &__title{
+      font-size: 76px;
+      line-height: 92px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #fff;
+   }
+   &__subtitle{
+      font-weight: 300;
+      max-width: 380px;
+      margin-bottom: 35px;
+   }
+   &__btn{
+      margin-bottom: 58px;
+   }
+   &__character{
+      display: flex;
+      justify-content: space-between
+   }
+   &__item-num{
+      font-size: 34px;
+      line-height: 54px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+   }
+   &__item-text{
+      font-size: 15px;
+      line-height: 18px;
+      position: relative;
+      &::after{
+         content: '';
+         width: 90px;
+         height: 2px;
+         bottom: -15px;
+         left: 0;
+         position: absolute;
+         background: linear-gradient(90deg, rgba(131,132,152,1) 0%, rgba(131,132,152,0) 100%);
+      }
+   }
+   &__image-box{
+      width: 594px;
+   }
+   &__image{
+      width: 100%;
+      height: 427px;
+      object-fit: contain;
+   }
+}
 
 
 @import 'media';
