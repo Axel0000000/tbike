@@ -7,6 +7,10 @@ body{
    color: #83838D;
 }
 
+a{
+   color: inherit;
+}
+
 .wrapper{
    display: flex;
    flex-direction: column;
@@ -23,10 +27,6 @@ body{
    padding: 0 15px;
 }
 
-a{
-   color: inherit;
-}
-
 .button,
 .arrow-btn{
    display: inline-block;
@@ -37,6 +37,7 @@ a{
       background-color: #83838D;
    }
 }
+
 .arrow-btn{
    padding: 11px 64px 11px 30px; 
    position: relative;
@@ -52,4 +53,11 @@ a{
       background-repeat: no-repeat;
       background-size: contain;
    }
+}
+
+.title{
+   font-size: 43px;
+   line-height: 52px;
+   font-weight: 600;
+   color:#06071C;
 }
