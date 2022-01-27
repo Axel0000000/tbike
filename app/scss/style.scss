@@ -254,7 +254,7 @@
 
 //================================FEATURE
 .feature{
-   padding: 130px 0 50px;
+   padding: 130px 0;
    text-align: center;
    &__subtitle{
       max-width: 400px;
@@ -306,6 +306,90 @@
    &__right-body{
       text-align: left;
       padding-left: 25px;
+   }
+}
+
+.engine{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 130px;
+   &__image{
+      width: 514px;
+      height: 442px;
+      object-fit: contain;
+   }
+   &__content{
+      padding-top: 75px;
+      max-width: 460px;
+      text-align: left;
+   }
+   &__title{
+      font-size: 43px;
+      line-height: 52px;
+      font-weight: 600;
+      color:#06071C;
+      margin-bottom: 25px;
+   }
+}
+
+.display{
+   display: flex;
+   justify-content: space-between;
+   &__info{
+      max-width: 460px;
+      width: 100%;
+      text-align: left;
+   }
+   &__title{
+      font-size: 43px;
+      line-height: 52px;
+      font-weight: 600;
+      color:#06071C;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+   }
+   &__subtitle{
+      margin-bottom: 35px;
+   }
+   &__list-item{
+      margin-bottom: 20px;
+      padding: 3px 0 3px 70px;
+      position: relative;
+      &:last-child{
+         margin-bottom: 0;
+      }
+      &::before{
+         content: '';
+         width: 40px;
+         height: 40px;
+         position: absolute;
+         left: 0;
+         top: 0;
+      }
+   }
+   &__list-item:nth-child(1)::before{
+      background-image: url('../images/icons/phone.svg');
+   }
+   &__list-item:nth-child(2)::before{
+      background-image: url('../images/icons/email.svg');
+   }
+   &__list-item:nth-child(3)::before{
+      background-image: url('../images/icons/app.svg');
+   }
+   &__list-item:nth-child(4)::before{
+      background-image: url('../images/icons/battery.svg');
+   }
+   &__list-link{
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 500;
+      color:#06071C;
+   }
+   &__image{
+      width: 560px;
+      height: 380px;
+      object-fit: contain;
    }
 }
 
