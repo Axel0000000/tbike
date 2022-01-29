@@ -6,28 +6,43 @@
 
 //================================HEADER
 .header{
-   position: absolute;
+   position: fixed;
    top: 0;
    left: 0;
    width: 100%;
+   z-index: 50;
+   transition: all .3s;
    &__inner{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      min-height: 50px;
       padding: 40px 0;
+      transition: all .3s;
    }
    &__button{
       padding: 11px 48px;
    }
+   &.header--scroll{
+      background-color: #040735;
+      .header__inner{
+         padding: 20px 0;
+      }
+   }
+   &__burger{
+      display: none;
+   }
 }
 
 .menu{
-   max-width: 270px;
-   width: 100%;
    &__list{
       display: flex;
       justify-content: space-between;
+   }
+   &__list-item.menu__list-item--login{
+      display: none;
+   }
+   &__list-item + .menu__list-item{
+      margin-left: 30px;
    }
    &__list-link{
       transition: all .3s;
@@ -63,7 +78,7 @@
    }
    &__info{
       max-width: 264px;
-      margin-right: 30px;
+      margin-right: 25px;
    }
    &__logo{
       display: inline-block;
@@ -72,6 +87,7 @@
    &__news,
    &__resources{
       width: 120px;
+      padding: 0 5px;
    }
    &__resources{
       margin-left: auto;
@@ -91,7 +107,7 @@
    &__contact{
       max-width: 450px;
       width: 100%;
-      margin-left: 100px;
+      margin-left: 95px;
    }
    &__form{
       display: flex;
@@ -203,17 +219,11 @@
       margin-bottom: 10px;
    }
    &__item-title{
-      margin-bottom: 15px;
-   }
-   &__item-link{
       font-size: 24px;
       line-height: 34px;
       font-weight: 600;
       color: #06071C;
-      transition: all .3s;
-      &:hover{
-         color: #83838D;
-      }
+      margin-bottom: 15px;
    }
    &__star{
       margin-bottom: 8px;
@@ -284,11 +294,17 @@
       padding-right: 25px;
    }
    &__item-title{
+      margin-bottom: 6px;
+   }
+   &__item-link{
       font-size: 24px;
       line-height: 34px;
       font-weight: 600;
       color: #06071C;
-      margin-bottom: 6px;
+      transition: all .3s;
+      &:hover{
+         color: #83838D;
+      }
    }
    &__item-img{
       width: 60px;
@@ -385,12 +401,20 @@
       line-height: 34px;
       font-weight: 500;
       color:#06071C;
+      transition: all .3s;
+      &:hover{
+         color: #83838D;
+      }
    }
    &__image{
       width: 560px;
       height: 380px;
       object-fit: contain;
    }
+}
+
+.lorem{
+   padding-top: 140px;
 }
 
 @import 'media';

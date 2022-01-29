@@ -19,33 +19,39 @@
       <header class="header">
          <div class="container">
             <div class="header__inner">
-               <a class="logo" href="#">
+               <a class="header__logo logo" href="#home">
                   <img class="logo__img" src="images/logo.png" alt="logo">
                </a>
                <nav class="menu">
                   <ul class="menu__list">
                      <li class="menu__list-item">
-                        <a class="menu__list-link menu__list-link--active" href="#">Home</a>
+                        <a class="menu__list-link menu__list-link--home menu__list-link--active" href="#home">Home</a>
                      </li>
                      <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Model</a>
+                        <a class="menu__list-link" href="#model">Model</a>
                      </li>
                      <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Feature</a>
+                        <a class="menu__list-link" href="#feature">Feature</a>
                      </li>
                      <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Contact</a>
+                        <a class="menu__list-link" href="#contact">Contact</a>
+                     </li>
+                     <li class="menu__list-item menu__list-item--login">
+                        <a class="menu__list-link" href="#">Login</a>
                      </li>
                   </ul>
                </nav>
-               <a class="header__button button" href="#">Login</a>
+               <a class="header__button button" href="#model">Login</a>
+               <div class="header__burger">
+                  <span></span>
+               </div>
             </div>
          </div>
       </header>
 
       <main class="page">
 
-         <section class="intro" style="background-image: url('images/intro-bg.jpg');">
+         <section class="intro" id="home" style="background-image: url('images/intro-bg.jpg');">
             <div class="container">
                <div class="intro__inner">
                   <div class="intro__content">
@@ -77,7 +83,7 @@
             </div>
          </section>
 
-         <section class="variants">
+         <section class="variants" id="model">
             <div class="container">
                <h3 class="variants__title title">Variants of Yamaha R15 V4</h3>
                <p class="variants__subtitle">
@@ -86,36 +92,44 @@
                </p>
                <div class="variants__items">
                   <div class="variants__item">
-                     <img class="variants__image" src="images/variants/variant-1.png" alt="variant-1">
+                     <a class="variants__img-link" href="#">
+                        <img class="variants__image" src="images/variants/variant-1.png" alt="variant-1">
+                     </a>
                      <h4 class="variants__item-title">
-                        <a class="variants__item-link" href="#">R15 V4 Racing Blue</a>
+                        R15 V4 Racing Blue
                      </h4>
                      <div class="variants__star star" data-rateyo-rating="4"></div>
                      <p class="variants__item-descr">Rs. 1.72 Lakh</p>
                      <a class="variants__item-btn arrow-btn" href="#">Book Now</a>
                   </div>
                   <div class="variants__item">
-                     <img class="variants__image" src="images/variants/variant-2.png" alt="variant-1">
+                     <a class="variants__img-link" href="#">
+                        <img class="variants__image" src="images/variants/variant-2.png" alt="variant-2">
+                     </a>
                      <h4 class="variants__item-title">
-                        <a class="variants__item-link" href="#">R15 V4 Metallic Red</a>
+                        R15 V4 Metallic Red
                      </h4>
                      <div class="variants__star star" data-rateyo-rating="4"></div>
                      <p class="variants__item-descr">Rs. 1.67 Lakh</p>
                      <a class="variants__item-btn arrow-btn" href="#">Book Now</a>
                   </div>
                   <div class="variants__item">
-                     <img class="variants__image" src="images/variants/variant-3.png" alt="variant-1">
+                     <a class="variants__img-link" href="#">
+                        <img class="variants__image" src="images/variants/variant-3.png" alt="variant-3">
+                     </a>
                      <h4 class="variants__item-title">
-                        <a class="variants__item-link" href="#">R15 V4 Dark Knight</a>
+                        R15 V4 Dark Knight
                      </h4>
                      <div class="variants__star star" data-rateyo-rating="5"></div>
                      <p class="variants__item-descr">Rs. 1.68 Lakh</p>
                      <a class="variants__item-btn arrow-btn" href="#">Book Now</a>
                   </div>
                   <div class="variants__item">
-                     <img class="variants__image" src="images/variants/variant-4.png" alt="variant-1">
+                     <a class="variants__img-link" href="#">
+                        <img class="variants__image" src="images/variants/variant-4.png" alt="variant-4">
+                     </a>
                      <h4 class="variants__item-title">
-                        <a class="variants__item-link" href="#">R15 V4 Metallic</a>
+                        R15 V4 Metallic
                      </h4>
                      <div class="variants__star star" data-rateyo-rating="3"></div>
                      <p class="variants__item-descr">Rs. 1.77 Lakh</p>
@@ -142,7 +156,7 @@
             </div>
          </section>
 
-         <section class="feature">
+         <section class="feature" id="feature">
             <div class="container">
                <h3 class="feature__title title">Feature</h3>
                <p class="feature__subtitle">
@@ -152,7 +166,9 @@
                   <div class="description__items-left">
                      <div class="description__left-item">
                         <div class="description__left-body">
-                           <h5 class="description__item-title">Dual Channel ABS</h5>
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Dual Channel ABS</a>
+                           </h5>
                            <p class="description__item-text">
                               Enjoy great performance with superior control.
                            </p>
@@ -161,7 +177,9 @@
                      </div>
                      <div class="description__left-item">
                         <div class="description__left-body">
-                           <h5 class="description__item-title">Aluminum Swingarm</h5>
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Aluminum Swingarm</a>
+                           </h5>
                            <p class="description__item-text">
                               Aluminum swingarm give you the advantage of significant reduction in unsprung weight.
                            </p>
@@ -170,7 +188,9 @@
                      </div>
                      <div class="description__left-item">
                         <div class="description__left-body">
-                           <h5 class="description__item-title">Upside Down Front Forks</h5>
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Upside Down Front Forks</a>
+                           </h5>
                            <p class="description__item-text">
                               To take the sporty handling on twisty roads to the next level.
                            </p>
@@ -183,7 +203,9 @@
                      <div class="description__right-item">
                         <img class="description__item-img" src="images/feature/feature-4.png" alt="engine">
                         <div class="description__right-body">
-                           <h5 class="description__item-title">Fl Engine with VVA</h5>
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Fl Engine with VVA</a>
+                           </h5>
                            <p class="description__item-text">
                               This is a one-of-a-kind high-performance VVA system.
                            </p>
@@ -192,7 +214,9 @@
                      <div class="description__right-item">
                         <img class="description__item-img" src="images/feature/feature-5.png" alt="quick shifter">
                         <div class="description__right-body">
-                           <h5 class="description__item-title">Quick Shifter</h5>
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Quick Shifter</a>
+                           </h5>
                            <p class="description__item-text">
                               The Quick Shifter* (up-shift) allows for clutch-less shifting of gears.
                            </p>
@@ -201,7 +225,9 @@
                      <div class="description__right-item">
                         <img class="description__item-img" src="images/feature/feature-6.png" alt="traction control">
                         <div class="description__right-body">
-                           <h5 class="description__item-title">Traction Control System</h5>
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Traction Control System</a>
+                           </h5>
                            <p class="description__item-text">
                               The R15 V4 comes with Traction Control System.
                            </p>
@@ -248,12 +274,12 @@
 
       </main>
 
-      <footer class="footer" style="background-image: url(images/footer-bg.jpg);">
+      <footer class="footer" id="contact" style="background-image: url(images/footer-bg.jpg);">
          <div class="container">
             <div class="footer__inner">
                <div class="footer__content">
                   <div class="footer__info">
-                     <a class="footer__logo logo" href="#">
+                     <a class="footer__logo logo" href="#home">
                         <img class="logo__img" src="images/logo.png" alt="logo">
                      </a>
                      <p class="footer__text">

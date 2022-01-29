@@ -27,6 +27,15 @@ a{
    padding: 0 15px;
 }
 
+.logo{
+   width: 154px;
+   &__img{
+      max-width: 100%;
+      height: 34px;
+      object-fit: contain;
+   }
+}
+
 .button,
 .arrow-btn{
    display: inline-block;
