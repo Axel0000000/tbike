@@ -2,17 +2,333 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TBIKE</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-    
-    <script src="js/main.min.js"></script>
+   <div class="wrapper">
+
+      <header class="header">
+         <div class="container">
+            <div class="header__inner">
+               <a class="header__logo logo" href="#home">
+                  <img class="logo__img" src="images/logo.png" alt="logo">
+               </a>
+               <nav class="menu">
+                  <ul class="menu__list">
+                     <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link--home menu__list-link--active" href="#home">Home</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a class="menu__list-link" href="#model">Model</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a class="menu__list-link" href="#feature">Feature</a>
+                     </li>
+                     <li class="menu__list-item">
+                        <a class="menu__list-link" href="#contact">Contact</a>
+                     </li>
+                     <li class="menu__list-item menu__list-item--login">
+                        <a class="menu__list-link" href="#">Login</a>
+                     </li>
+                  </ul>
+               </nav>
+               <a class="header__button button" href="#model">Login</a>
+               <div class="header__burger">
+                  <span></span>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main class="page">
+
+         <section class="intro" id="home" style="background-image: url('images/intro-bg.jpg');">
+            <div class="container">
+               <div class="intro__inner">
+                  <div class="intro__content">
+                     <h1 class="intro__title">Ride-on R15 V4 with Smile</h1>
+                     <p class="intro__subtitle">
+                        R15 is the thing which i want to earn with my own money, rather than earning it with my parents
+                        Money
+                     </p>
+                     <a class="intro__btn arrow-btn" href="#">Book Now</a>
+                     <div class="intro__character">
+                        <div class="intro__item">
+                           <p class="intro__item-num">155cc</p>
+                           <p class="intro__item-text">Engine Displ</p>
+                        </div>
+                        <div class="intro__item">
+                           <p class="intro__item-num">18.4 bhp</p>
+                           <p class="intro__item-text">Max Power</p>
+                        </div>
+                        <div class="intro__item">
+                           <p class="intro__item-num">142 Kg</p>
+                           <p class="intro__item-text">Weight</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="intro__image-box">
+                     <img class="intro__image" src="images/intro-img.png" alt="bike photo">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="variants" id="model">
+            <div class="container">
+               <h3 class="variants__title title">Variants of Yamaha R15 V4</h3>
+               <p class="variants__subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada augue et gravida sed ipsum. Fames
+                  imperdiet massa tortor pellentesque urna.
+               </p>
+               <div class="variants__items">
+                  <div class="variants__item">
+                     <a class="variants__img-link" href="#">
+                        <img class="variants__image" src="images/variants/variant-1.png" alt="variant-1">
+                     </a>
+                     <h4 class="variants__item-title">
+                        R15 V4 Racing Blue
+                     </h4>
+                     <div class="variants__star star" data-rateyo-rating="4"></div>
+                     <p class="variants__item-descr">Rs. 1.72 Lakh</p>
+                     <a class="variants__item-btn arrow-btn" href="#">Book Now</a>
+                  </div>
+                  <div class="variants__item">
+                     <a class="variants__img-link" href="#">
+                        <img class="variants__image" src="images/variants/variant-2.png" alt="variant-2">
+                     </a>
+                     <h4 class="variants__item-title">
+                        R15 V4 Metallic Red
+                     </h4>
+                     <div class="variants__star star" data-rateyo-rating="4"></div>
+                     <p class="variants__item-descr">Rs. 1.67 Lakh</p>
+                     <a class="variants__item-btn arrow-btn" href="#">Book Now</a>
+                  </div>
+                  <div class="variants__item">
+                     <a class="variants__img-link" href="#">
+                        <img class="variants__image" src="images/variants/variant-3.png" alt="variant-3">
+                     </a>
+                     <h4 class="variants__item-title">
+                        R15 V4 Dark Knight
+                     </h4>
+                     <div class="variants__star star" data-rateyo-rating="5"></div>
+                     <p class="variants__item-descr">Rs. 1.68 Lakh</p>
+                     <a class="variants__item-btn arrow-btn" href="#">Book Now</a>
+                  </div>
+                  <div class="variants__item">
+                     <a class="variants__img-link" href="#">
+                        <img class="variants__image" src="images/variants/variant-4.png" alt="variant-4">
+                     </a>
+                     <h4 class="variants__item-title">
+                        R15 V4 Metallic
+                     </h4>
+                     <div class="variants__star star" data-rateyo-rating="3"></div>
+                     <p class="variants__item-descr">Rs. 1.77 Lakh</p>
+                     <a class="variants__item-btn arrow-btn" href="#">Book Now</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="video">
+            <div class="container">
+               <h3 class="video__title title">Video</h3>
+               <p class="video__subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada augue et gravida sed ipsum.
+               </p>
+               <div class="video__popup" style="background-image: url('images/video-bg.jpg');">
+                  <a class="video__play" data-fancybox href="https://youtu.be/isYaqR8TFwY">
+                     <svg width="133" height="133" viewBox="0 0 133 133" fill="none">
+                        <circle cx="66.5" cy="66.5" r="66.5" fill="#2408E8" />
+                        <path d="M93 67L54 89.5167L54 44.4833L93 67Z" fill="#F7F7FD" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </section>
+
+         <section class="feature" id="feature">
+            <div class="container">
+               <h3 class="feature__title title">Feature</h3>
+               <p class="feature__subtitle">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada augue et gravida sed ipsum.
+               </p>
+               <div class="description">
+                  <div class="description__items-left">
+                     <div class="description__left-item">
+                        <div class="description__left-body">
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Dual Channel ABS</a>
+                           </h5>
+                           <p class="description__item-text">
+                              Enjoy great performance with superior control.
+                           </p>
+                        </div>
+                        <img class="description__item-img" src="images/feature/feature-1.png" alt="brake">
+                     </div>
+                     <div class="description__left-item">
+                        <div class="description__left-body">
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Aluminum Swingarm</a>
+                           </h5>
+                           <p class="description__item-text">
+                              Aluminum swingarm give you the advantage of significant reduction in unsprung weight.
+                           </p>
+                        </div>
+                        <img class="description__item-img" src="images/feature/feature-2.png" alt="swingarm">
+                     </div>
+                     <div class="description__left-item">
+                        <div class="description__left-body">
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Upside Down Front Forks</a>
+                           </h5>
+                           <p class="description__item-text">
+                              To take the sporty handling on twisty roads to the next level.
+                           </p>
+                        </div>
+                        <img class="description__item-img" src="images/feature/feature-3.png" alt="chain">
+                     </div>
+                  </div>
+                  <img class="description__image" src="images/feature/bike.jpg" alt="bike photo">
+                  <div class="description__items-right">
+                     <div class="description__right-item">
+                        <img class="description__item-img" src="images/feature/feature-4.png" alt="engine">
+                        <div class="description__right-body">
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Fl Engine with VVA</a>
+                           </h5>
+                           <p class="description__item-text">
+                              This is a one-of-a-kind high-performance VVA system.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="description__right-item">
+                        <img class="description__item-img" src="images/feature/feature-5.png" alt="quick shifter">
+                        <div class="description__right-body">
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Quick Shifter</a>
+                           </h5>
+                           <p class="description__item-text">
+                              The Quick Shifter* (up-shift) allows for clutch-less shifting of gears.
+                           </p>
+                        </div>
+                     </div>
+                     <div class="description__right-item">
+                        <img class="description__item-img" src="images/feature/feature-6.png" alt="traction control">
+                        <div class="description__right-body">
+                           <h5 class="description__item-title">
+                              <a class="description__item-link" href="#">Traction Control System</a>
+                           </h5>
+                           <p class="description__item-text">
+                              The R15 V4 comes with Traction Control System.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="engine">
+                  <img class="engine__image" src="images/feature/engine.png" alt="engine photo">
+                  <div class="engine__content">
+                     <h3 class="engine__title">Engine <br> The Appetizer!</h3>
+                     <p class="engine__text">
+                        The liquid cooled single overhead camshaft fuel injection engine churns out a maximum horse
+                        power of 13.5kW(18.4PS)/10000r/min and maximum torque of 14.2N.m (1.4kgf.m) / 7500r/min. What’s
+                        more the engine is equipped with a Traction Control System and a Quick Shifter* (up-shift) too!
+                     </p>
+                  </div>
+               </div>
+               <div class="display">
+                  <div class="display__info">
+                     <h3 class="display__title">Y-CONNECT APP</h3>
+                     <p class="display__subtitle">
+                        The Yamaha Y-Connect App displays phone notifications on your instrument cluster screen.
+                     </p>
+                     <ul class="display__list">
+                        <li class="display__list-item">
+                           <a class="display__list-link" href="#">CALL ALERT</a>
+                        </li>
+                        <li class="display__list-item">
+                           <a class="display__list-link" href="#">SMS & EMAIL</a>
+                        </li>
+                        <li class="display__list-item">
+                           <a class="display__list-link" href="#">APP CONNECTIVITY STATUS</a>
+                        </li>
+                        <li class="display__list-item">
+                           <a class="display__list-link" href="#">PHONE BATTERY LEVEL STATUS</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <img class="display__image" src="images/feature/dashboard.jpg" alt="dashboard photo">
+               </div>
+            </div>
+         </section>
+
+      </main>
+
+      <footer class="footer" id="contact" style="background-image: url(images/footer-bg.jpg);">
+         <div class="container">
+            <div class="footer__inner">
+               <div class="footer__content">
+                  <div class="footer__info">
+                     <a class="footer__logo logo" href="#home">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
+                     </a>
+                     <p class="footer__text">
+                        Lorem ipsum sit amet, consectetur adipiscing elit.
+                     </p>
+                  </div>
+                  <div class="footer__news">
+                     <h6 class="footer__title">News</h6>
+                     <ul class="footer__list">
+                        <li class="footer__list-item">
+                           <a class="footer__list-link" href="#">Features</a>
+                        </li>
+                        <li class="footer__list-item">
+                           <a class="footer__list-link" href="#">Testimonial</a>
+                        </li>
+                        <li class="footer__list-item">
+                           <a class="footer__list-link" href="#">Help</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="footer__resources">
+                     <h6 class="footer__title">Resources</h6>
+                     <ul class="footer__list">
+                        <li class="footer__list-item">
+                           <a class="footer__list-link" href="#">Service Four</a>
+                        </li>
+                        <li class="footer__list-item">
+                           <a class="footer__list-link" href="#">Contents</a>
+                        </li>
+                        <li class="footer__list-item">
+                           <a class="footer__list-link" href="#">Navigations</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="footer__contact">
+                  <h6 class="footer__title">Contact</h6>
+                  <form class="footer__form" method="post" enctype="multipart/form-data" action="#">
+                     <input class="footer__input" placeholder="Enter your Email" type="email" required>
+                     <button class="footer__button button" type="submit">Join Now</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+   <script src="js/main.min.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@
   "author": "Oleksandr Stinskyi",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.0.48",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -18,6 +19,7 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
+    "rateyo": "^2.3.2",
     "sass": "^1.43.4"
   }
 }
