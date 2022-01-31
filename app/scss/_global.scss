@@ -72,3 +72,15 @@ a{
    max-width: 330px;
    margin: 0 auto 25px;
 }
+
+@media (max-width: 420px){
+   body{
+      font-size: 16px;
+      line-height: 22px;
+   }
+   .title{
+      font-size: 36px;
+      line-height: 44px;
+      margin: 0 auto 20px;
+   }
+}
